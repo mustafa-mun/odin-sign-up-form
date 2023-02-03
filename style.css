@@ -92,6 +92,9 @@ main .form-section form input {
   height: 19px;
   border: solid #d8d9dd 2px;
 }
+main .form-section form input:valid {
+  border: solid green;
+}
 main .form-section form label {
   margin-bottom: 5px;
   color: rgb(51, 50, 50);
@@ -106,12 +109,14 @@ main .form-section form .form-container .input-container {
 }
 main footer {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   margin-top: 40px;
   height: 200px;
   background-color: rgb(248, 246, 246);
 }
 main footer div {
+  display: flex;
+  flex-direction: column;
   margin-top: 2vw;
   margin-left: 5vw;
 }
@@ -140,4 +145,9 @@ main footer div .login-text {
 main footer div .login-text:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+main footer img {
+  margin-top: 40px;
+  margin-right: 1vw;
+  width: 80px;
 }/*# sourceMappingURL=style.css.map */

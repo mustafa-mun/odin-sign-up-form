@@ -41,34 +41,34 @@
 
             <div class="input-container">
               <label for="first-name">FIRST NAME</label>
-              <input type="text" name="first-name" id="first-name">
+              <input type="text" name="first-name" id="first-name" required minlength="3" maxlength="15">
             </div>
 
             <div class="input-container">
               <label for="last-name">LAST NAME</label>
-              <input type="text" name="last-name" id="last-name">
+              <input type="text" name="last-name" id="last-name" required minlength="3" maxlength="15">
             </div>
           </div>
           <div class="form-container">
             <div class="input-container">
-              <label for="first-name">EMAIL</label>
-              <input type="text" name="first-name" id="first-name">
+              <label for="user-email">EMAIL</label>
+              <input type="email" name="user-email" id="user-email" required>
             </div>
 
             <div class="input-container">
-              <label for="last-name">PHONE NUMBER</label>
-              <input type="text" name="last-name" id="last-name">
+              <label for="user-phone-number">PHONE NUMBER</label>
+              <input type="number" name="user-phone-number" id="user-phone-number" required>
             </div>
           </div>
           <div class="form-container">
             <div class="input-container">
-              <label for="first-name">PASSWORD</label>
-              <input type="text" name="first-name" id="first-name">
+              <label for="user-password">PASSWORD</label>
+              <input type="password" name="user-password" id="user-password" required minlength="5" maxlength="20">
             </div>
 
             <div class="input-container">
-              <label for="last-name">CONFIRM PASSWORD</label>
-              <input type="text" name="last-name" id="last-name">
+              <label for="confirm-password">CONFIRM PASSWORD</label>
+              <input type="password" name="confirm-password" id="confirm-password" required>
             </div>
           </div>
         </form>
@@ -79,6 +79,10 @@
           <button type="submit">Create Account</button>
           <p style="font-size: 18px;">Already have an account ? <span class="login-text">Log in</span></p>
         </div>
+
+        <figure>
+          <img src="assets/city-logo.png" alt="city-logo">
+        </figure>
       
       </footer>
     </div>
