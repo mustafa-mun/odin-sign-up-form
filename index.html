@@ -35,7 +35,7 @@
         <p class="join-msg">Join the revolution of the digital age! CyberCity is the ultimate destination for those seeking a futuristic lifestyle, where technology and humanity merge to create a dynamic and thriving community. Be a part of shaping the future and experience the cutting-edge advancements that make life in CyberCity truly unique. Sign up now and join the vanguard of progress!</p>
       </section>
       <section class="form-section">
-        <p>Join Us!</p>
+        <p class="join-us-text">Join Us!</p>
         <form action="#" method="get">
           <div class="form-container">
 
@@ -64,6 +64,7 @@
             <div class="input-container">
               <label for="user-password">PASSWORD</label>
               <input type="password" name="user-password" id="user-password" required minlength="5" maxlength="20">
+              <p style="margin: 0; color: red;font-size: 14px;" id="password-warning"></p>
             </div>
 
             <div class="input-container">
@@ -71,20 +72,21 @@
               <input type="password" name="confirm-password" id="confirm-password" required>
             </div>
           </div>
+          <footer>
+
+            <div>
+              <button type="submit" onclick="passwordChecker()">Create Account</button>
+              <p style="font-size: 18px;">Already have an account ? <span class="login-text">Log in</span></p>
+            </div>
+    
+            <figure>
+              <img src="assets/city-logo.png" alt="city-logo">
+            </figure>
+          
+          </footer>
         </form>
       </section>
-      <footer>
-
-        <div>
-          <button type="submit">Create Account</button>
-          <p style="font-size: 18px;">Already have an account ? <span class="login-text">Log in</span></p>
-        </div>
-
-        <figure>
-          <img src="assets/city-logo.png" alt="city-logo">
-        </figure>
       
-      </footer>
     </div>
 
 

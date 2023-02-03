@@ -73,13 +73,9 @@ main .rightside-section .brand-msg-section p:hover {
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
-main .form-section {
-  margin-left: 15px;
-  margin-left: 5vw;
-  margin-right: 5vw;
-}
-main .form-section p {
+main .form-section .join-us-text {
   font-size: 28px;
+  margin-left: 5vw;
 }
 main .form-section form {
   display: flex;
@@ -90,10 +86,14 @@ main .form-section form {
 main .form-section form input {
   width: 12vw;
   height: 19px;
+  border-radius: 3px;
   border: solid #d8d9dd 2px;
 }
 main .form-section form input:valid {
-  border: solid green;
+  border: solid rgb(172, 235, 172) 2px;
+}
+main .form-section form input:focus {
+  outline-color: rgb(66, 66, 204);
 }
 main .form-section form label {
   margin-bottom: 5px;
@@ -102,25 +102,27 @@ main .form-section form label {
 main .form-section form .form-container {
   display: flex;
   justify-content: space-between;
+  margin-left: 5vw;
 }
 main .form-section form .form-container .input-container {
   display: flex;
   flex-direction: column;
 }
-main footer {
+main .form-section footer {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
   height: 200px;
+  width: 1180px;
   background-color: rgb(248, 246, 246);
 }
-main footer div {
+main .form-section footer div {
   display: flex;
   flex-direction: column;
   margin-top: 2vw;
   margin-left: 5vw;
 }
-main footer div button {
+main .form-section footer div button {
   background-image: linear-gradient(to right, #000000 0%, #53346D 51%, #000000 100%);
   text-align: center;
   text-transform: uppercase;
@@ -132,21 +134,21 @@ main footer div button {
   box-shadow: 0 0 20px #eee;
   border-radius: 10px;
 }
-main footer div button:hover {
+main .form-section footer div button:hover {
   background-position: right center; /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
   cursor: pointer;
 }
-main footer div .login-text {
+main .form-section footer div .login-text {
   color: #53346D;
   font-weight: bold;
 }
-main footer div .login-text:hover {
+main .form-section footer div .login-text:hover {
   text-decoration: underline;
   cursor: pointer;
 }
-main footer img {
+main .form-section footer img {
   margin-top: 40px;
   margin-right: 1vw;
   width: 80px;
