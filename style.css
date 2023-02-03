@@ -4,7 +4,11 @@
   box-sizing: border-box;
 }
 
-figure .img-container .city-background {
+main {
+  display: flex;
+  flex-direction: row;
+}
+main figure .img-container .city-background {
   position: absolute;
   width: max(38vw, 200px);
   height: 100%;
@@ -14,7 +18,7 @@ figure .img-container .city-background {
   -o-object-fit: cover;
      object-fit: cover;
 }
-figure .img-container .logo-container {
+main figure .img-container .logo-container {
   position: absolute;
   display: flex;
   align-items: center;
@@ -22,17 +26,118 @@ figure .img-container .logo-container {
   background-color: rgba(0, 0, 0, 0.4);
   left: 0;
   width: max(38vw, 200px);
-  top: 20%;
+  top: 22%;
   height: 150px;
 }
-figure .img-container .logo-container img {
+main figure .img-container .logo-container img {
   width: 4vw;
   margin-right: 10px;
   -o-object-fit: fill;
      object-fit: fill;
 }
-figure .img-container .logo-container .logo-text {
+main figure .img-container .logo-container .logo-text {
   color: white;
   font-family: "Orbitron", sans-serif;
   font-size: 3vw;
+  text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8);
+}
+main .rightside-section {
+  font-family: "Nunito Sans", sans-serif;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: max(38vw, 200px);
+  z-index: 22;
+}
+main .rightside-section .brand-msg-section {
+  display: flex;
+  height: 340px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(248, 246, 246);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+main .rightside-section .brand-msg-section p {
+  font-family: "Orbitron", sans-serif;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  font-size: 23px;
+  line-height: 40px;
+  transition: all 0.2s ease-in-out;
+}
+main .rightside-section .brand-msg-section p:hover {
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+main .form-section {
+  margin-left: 15px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+main .form-section p {
+  font-size: 28px;
+}
+main .form-section form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  width: 38vw;
+}
+main .form-section form input {
+  width: 12vw;
+  height: 19px;
+  border: solid #d8d9dd 2px;
+}
+main .form-section form label {
+  margin-bottom: 5px;
+  color: rgb(51, 50, 50);
+}
+main .form-section form .form-container {
+  display: flex;
+  justify-content: space-between;
+}
+main .form-section form .form-container .input-container {
+  display: flex;
+  flex-direction: column;
+}
+main footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  height: 200px;
+  background-color: rgb(248, 246, 246);
+}
+main footer div {
+  margin-top: 2vw;
+  margin-left: 5vw;
+}
+main footer div button {
+  background-image: linear-gradient(to right, #000000 0%, #53346D 51%, #000000 100%);
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: rgb(236, 233, 233);
+  padding: 16px 37px;
+  font-weight: bold;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+}
+main footer div button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+main footer div .login-text {
+  color: #53346D;
+  font-weight: bold;
+}
+main footer div .login-text:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
