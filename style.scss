@@ -1,3 +1,4 @@
+$leftbar-width: max(38vw, 200px);
 :root {
   margin: 0;
   padding: 0;
@@ -10,7 +11,7 @@ figure {
   
     .city-background {
       position: absolute;
-      width: max(38vw, 200px);
+      width: $leftbar-width;
       height: 100%;
       left: 0;
       right: 0;
@@ -25,14 +26,22 @@ figure {
       justify-content: center;
       background-color: rgba(0,0,0,0.4);
       left: 0;
-      width: max(38vw, 200px);
+      width: $leftbar-width;
       top: 20%;
       height: 150px;
 
+      img {
+        width: 4vw;
+        margin-right: 10px;
+        object-fit: fill;
+      }
+      
       .logo-text {
         color: white;
-        font-size: 3.2vw;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 3vw;
       }
+
     }
   
   }

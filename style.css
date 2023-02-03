@@ -25,7 +25,14 @@ figure .img-container .logo-container {
   top: 20%;
   height: 150px;
 }
+figure .img-container .logo-container img {
+  width: 4vw;
+  margin-right: 10px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
 figure .img-container .logo-container .logo-text {
   color: white;
-  font-size: 3.2vw;
+  font-family: "Orbitron", sans-serif;
+  font-size: 3vw;
 }/*# sourceMappingURL=style.css.map */
