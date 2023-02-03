@@ -1,0 +1,41 @@
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+figure {
+  .img-container {
+  
+    .city-background {
+      position: absolute;
+      width: max(38vw, 200px);
+      height: 100%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      object-fit: cover;
+    }
+  
+    .logo-container {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0,0,0,0.4);
+      left: 0;
+      width: max(38vw, 200px);
+      top: 20%;
+      height: 150px;
+
+      .logo-text {
+        color: white;
+        font-size: 3.2vw;
+      }
+    }
+  
+  }
+  
+}
+
