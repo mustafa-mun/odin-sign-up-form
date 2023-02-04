@@ -42,22 +42,26 @@
             <div class="input-container">
               <label for="first-name">FIRST NAME</label>
               <input placeholder="Your Name" type="text" name="first-name" id="first-name" required minlength="3" maxlength="15">
+              <p style="margin: 0; color: red;font-size: 14px;" id="firstName-warning"></p>
             </div>
 
             <div class="input-container">
               <label for="last-name">LAST NAME</label>
               <input placeholder="Your Last name" type="text" name="last-name" id="last-name" required minlength="3" maxlength="15">
+              <p style="margin: 0; color: red;font-size: 14px;" id="lastName-warning"></p>
             </div>
           </div>
           <div class="form-container">
             <div class="input-container">
               <label for="user-email">EMAIL</label>
               <input placeholder="example@gmail.com" type="email" name="user-email" id="user-email" required>
+              <p style="margin: 0; color: red;font-size: 14px;" id="email-warning"></p>
             </div>
 
             <div class="input-container">
               <label for="user-phone-number">PHONE NUMBER</label>
               <input placeholder="+123456789" type="tel" name="user-phone-number" id="user-phone-number" minlength="9" maxlength="14" required>
+              <p style="margin: 0; color: red;font-size: 14px;" id="number-warning"></p>
             </div>
           </div>
           <div class="form-container">
@@ -75,7 +79,7 @@
           <footer>
 
             <div>
-              <button type="submit" onclick="passwordChecker()">Create Account</button>
+              <button type="submit" onclick="emptyCheck()">Create Account</button>
               <p style="font-size: 18px;">Already have an account ? <span class="login-text">Log in</span></p>
             </div>
     

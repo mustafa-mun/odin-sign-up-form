@@ -92,7 +92,7 @@ main .form-section form input {
   padding-left: 5px;
 }
 main .form-section form input:focus {
-  outline-color: rgb(66, 66, 204);
+  outline: none;
 }
 main .form-section form label {
   margin-bottom: 5px;
