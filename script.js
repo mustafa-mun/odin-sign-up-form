@@ -3,11 +3,15 @@ const userPasswordConfirm = document.getElementById('confirm-password');
 const passwordWarningMsg = document.getElementById('password-warning')
 
 
-
 function passwordChecker () {
-  if(userPassword.value === userPasswordConfirm.value ) {
-    console.log('passwords are same');
+
+  if(userPassword.value) {
+    if( userPassword.value === userPasswordConfirm.value ) {
+      passwordWarningMsg.textContent = ''
+    } else {
+      passwordWarningMsg.textContent = '*Passwords do not match!'
+    }
   } else {
-    passwordWarningMsg.textContent = '*Passwords do not match!'
+    passwordWarningMsg.textContent = '*Please enter your password'
   }
 }
