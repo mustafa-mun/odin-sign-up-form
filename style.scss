@@ -3,6 +3,7 @@ $leftbar-width: max(38vw, 200px);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 main {
@@ -105,17 +106,22 @@ main {
     flex-direction: column;
     row-gap: 24px;
     width: 38vw;
+ 
 
     input {
       width: 12vw;
-      height: 19px;
+      height: 24px;
       border-radius: 3px;
       border: solid #d8d9dd 2px;
+      padding-left: 5px;
     }
+
     
-    input:valid {
-      border: solid rgb(172, 235, 172) 2px;
-    }
+ 
+    
+
+  
+    
     input:focus {
       outline-color: rgb(66, 66, 204);
     }
